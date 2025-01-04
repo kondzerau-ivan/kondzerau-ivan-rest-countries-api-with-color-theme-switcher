@@ -22,6 +22,7 @@ export const countriesReducer = (state = initialState, { type, payload }) => {
     case SET_COUNTRIES:
       return {
         ...state,
+        status: 'received',
         list: payload,
       };
     default:
